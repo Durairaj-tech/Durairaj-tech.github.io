@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+
+  <!-- Bootstrap Js -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- My CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/9441b75538.js" crossorigin="anonymous"></script>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500;600;700;800&family=Roboto+Slab:wght@200;400;600;900&display=swap"
+    rel="stylesheet" />
+
+  <title>Portfolio</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <a href="#" class="navbar-brand">Portfolio</a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse navigation" id="navbarMenu">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a href="#about" class="nav-link navigation-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="#Skillstate" class="nav-link navigation-link">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a href="#projects" class="nav-link navigation-link">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a href="#Education" class="nav-link navigation-link">Education</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contactme" class="nav-link navigation-link">Contact me</a>
+        </li>
+        <li class="nav-item">
+          <a href="#social-media" class="nav-link navigation-link">Social Media</a>
+        </li>
+      </ul>
+    </div>
+  </nav><br>
+
+  <!-- Main Container -->
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 ">
+        <img src="./images/5.jpg" class="img-fluid " id="dp">
+      </div>
+      <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6" id="home">
+        <h2 class="text-white">Hello, I'm</h2>
+        <h1 class="text-warning m-heading">Durairaj N</h1>
+        <h2 class="text-white">Full Stack Web Developer</h2><br>
+        <a href="/files/my-resume.pdf" download="resume">
+          <button class="btn btn-dark">Download Resume</button>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <div id="about" class="container">
+    <div class="row">
+      <div class="col-12 text-white">
+        <h1 class="text-warning">About Me</h1>
+        <h1 class="m-heading">A little bit about me</h1>
+        <h6>
+          <br> &nbsp; &nbsp; &nbsp; &nbsp;
+          Hi I'm Durairaj N .Currently I am Full Stack Web Developer and also have expertise with Angular 9, MongoDB,
+          Python, JavaScript and front end .
+          <br> <br>&nbsp; &nbsp; &nbsp; &nbsp;Done few live projects and portfolio work in above.
+        </h6>
+        <br />
+        <h6>
+          &nbsp; &nbsp; &nbsp; &nbsp; Looking for a challenging position where I can effectively contribute my skills
+          and
+          process my competent technical skills.
+        </h6>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container mt-5" id="Skillstate">
+    <h1 class="text-warning" id="Skills">Skills</h1>
+    <div class="row">
+      <div class="col-6 text-white">
+        <ul>
+          <li class="html" id="list">HTML</li>
+          <li class="css" id="list">CSS</li>
+          <li class="js" id="list">JavaScript</li>
+          <li class="ts" id="list">TypeScript</li>
+          <li class="ng" id="list">Angular</li>
+        </ul>
+      </div>
+      <div class="col-6 text-white">
+        <ul>
+          <li class="react" id="list">React</li>
+          <li class="node" id="list">NodeJS</li>
+          <li class="mdb" id="list">MongoDB</li>
+          <li class="ms" id="list">MySql</li>
+          <li class="py" id="list">Python</li>
+        </ul>
+      </div>
+    </div>
+  </div><br>
+
+  <!-- Projects Section -->
+  <div id="projects" class="container pt-5">
+    <h1 class="text-warning mb-3 ml-1 pb-2">My Projects</h1>
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4" id="cards">
+        <div class="card" style="width: 18rem;">
+          <img src="./images/newyork-times.jpg" class="card-img-top" style="height: 13rem;" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">NewYork Times API</h5>
+            <p class="card-text">
+              NewYork Times API Integration to show top stories
+            </p>
+            <div>
+              <h6>Languages Used :</h6>
+              <img class="cardicons" src="./images/icon1.png" alt="..." />
+              <img class="cardicons" src="./images/icon2.png" alt="..." />
+              <img class="cardicons" src="./images/icon3.png" alt="..." /><br><br>
+            </div>
+            <div id="cardbtn"><button onclick=nytimes1() class="btn btn-warning">View Source Code</button><br><br>
+              <button onclick=nytimes2() class="btn btn-warning">View Project</button></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4" id="cards">
+        <div class="card" style="width: 18rem;">
+          <img src="./images/tictactoe.jpg" class="card-img-top" style="height: 13rem;" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Tic Tac Toe</h5>
+            <p class="card-text">
+              A Classic TicTacToe game using JavaScript
+            </p>
+            <div>
+              <h6>Languages Used :</h6>
+              <img class="cardicons" src="./images/icon1.png" alt="..." />
+              <img class="cardicons" src="./images/icon2.png" alt="..." />
+              <img class="cardicons" src="./images/icon3.png" alt="..." /><br><br>
+            </div>
+            <div id="cardbtn">
+              <button onclick=tictactoe1() class="btn btn-warning">View Source Code</button><br><br>
+              <button onclick=tictactoe2() class="btn btn-warning">View Project</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4" id="cards">
+        <div class="card" style="width: 18rem;">
+          <img src="./images/planner.JPG" class="card-img-top" style="height: 13rem;" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Planner</h5>
+            <p class="card-text">
+              A Schedule Planner using Angular <br><br>
+            </p>
+            <div>
+              <h6>Languages Used :</h6>
+              <img class="cardicons" src="./images/icon1.png" alt="..." />
+              <img class="cardicons" src="./images/icon2.png" alt="..." />
+              <img class="cardicons" src="./images/icon3.png" alt="..." />
+              <img class="cardicons" src="./images/icon4.png" alt="..." /><br><br>
+            </div>
+            <div id="cardbtn"><button onclick=planner1() class="btn btn-warning">View Source Code</button><br><br>
+              <button onclick=planner2() class="btn btn-warning">View Project</button></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4" id="cards">
+        <div class="card" style="width: 18rem;">
+          <img src="./images/validation.JPG" class="card-img-top" style="height: 13rem;" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Validation Form</h5>
+            <p class="card-text">
+              Validation Form using Angular
+            </p>
+            <div>
+              <h6>Languages Used :</h6>
+              <img class="cardicons" src="./images/icon1.png" alt="..." />
+              <img class="cardicons" src="./images/icon2.png" alt="..." />
+              <img class="cardicons" src="./images/icon4.png" alt="..." /><br><br>
+            </div>
+            <div id="cardbtn">
+              <button onclick=validation1() class="btn btn-warning">View Source Code</button><br><br>
+              <button onclick=validation2() class="btn btn-warning">View Project</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4" id="cards">
+        <div class="card" style="width: 18rem;">
+          <img src="./images/card.JPG" class="card-img-top" style="height: 13rem;" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Price Card</h5>
+            <p class="card-text">
+              Price Card using Bootstrap
+            </p>
+            <div>
+              <h6>Languages Used :</h6>
+              <img class="cardicons" src="./images/icon1.png" alt="..." />
+              <img class="cardicons" src="./images/icon2.png" alt="..." />
+              <img class="cardicons" src="./images/icon4.png" alt="..." /><br><br>
+            </div>
+            <div id="cardbtn">
+              <button onclick=card1() class="btn btn-warning">View Source Code</button><br><br>
+              <button onclick=card2() class="btn btn-warning">View Project</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4" id="cards">
+        <div class="card" style="width: 18rem;">
+          <img src="./images/digits.JPG" class="card-img-top" style="height: 13rem;" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Digits2Word</h5>
+            <p class="card-text">
+              Digits to word Conversion using JavaScript
+            </p>
+            <div>
+              <h6>Languages Used :</h6>
+              <img class="cardicons" src="./images/icon1.png" alt="..." />
+              <img class="cardicons" src="./images/icon3.png" alt="..." /><br><br>
+            </div>
+            <div id="cardbtn">
+              <button onclick=digits1() class="btn btn-warning">View Source Code</button><br><br>
+              <button onclick=digits2() class="btn btn-warning">View Project</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        function nytimes1() {
+          window.open('https://github.com/Durairaj-tech/newyorktimes-topstories', '_blank');
+        }
+        function tictactoe1() {
+          window.open('https://github.com/Durairaj-tech/tictactoe', '_blank');
+        }
+        function planner1() {
+          window.open('https://github.com/Durairaj-tech/assess', '_blank');
+        }
+          function validation1() {
+          window.open('https://github.com/Durairaj-tech/formarraygroup', '_blank');
+        }
+        function card1() {
+          window.open('https://github.com/Durairaj-tech/cards', '_blank');
+        }
+        function digits1() {
+          window.open('https://github.com/Durairaj-tech/day-19', '_blank');
+        }
+        function nytimes2() {
+          window.open('https://boring-brattain-2d2ac8.netlify.app', '_blank');
+        }
+        function tictactoe2() {
+          window.open('https://keen-spence-b4b6ff.netlify.app/', '_blank');
+        }
+        function planner2() {
+          window.open('https://zen-mestorf-5c048d.netlify.app/', '_blank');
+        }
+        function validation2() {
+          window.open('https://elastic-edison-de4a54.netlify.app/', '_blank');
+        }
+        function card2() {
+          window.open('https://relaxed-spence-64e0f4.netlify.app', '_blank');
+        }
+        function digits2() {
+          window.open('https://distracted-goodall-30f431.netlify.app/', '_blank');
+        }
+      </script>
+    </div>
+  </div>
+
+<div id="Education" class="container">
+    <div class="row">
+      <div class="col-12 text-white">
+        <h1 class="text-warning mb-3">Education</h1>
+      </div>
+    </div>
+    <div class="row text-white">
+      <div class="col-lg-6">
+        <h3>Full Stack Development</h3>
+        <h5>Guvi,Chennai</h5>
+      </div>
+      <div class="col-lg-6 text-warning" id="year">
+        <h5>April,2020</h5>
+      </div>
+    </div>
+    <br><br>
+    <div class="row text-white">
+      <div class="col-lg-6">
+        <h3>B.E Mechanical Engineering</h3>
+        <h5>P S N A CET</h5>
+        <h5>Dindigul</h5>
+      </div>
+      <div class="col-lg-6 text-warning" id="year">
+        <h5>CGPA 6.69</h5>
+        <h5>May,2018</h5>
+      </div>
+    </div>
+    <br><br>
+    <div class="row text-white">
+      <div class="col-lg-6">
+        <h3>HSC</h3>
+        <h5>Kurinji Matric Hr Sec School,
+          <h5>Namakkal</h5>
+        </h5>
+      </div>
+      <div class="col-lg-6 text-warning" id="year">
+        <h5>93.42 Percentage</h5>
+        <h5>May,2014</h5>
+      </div>
+    </div>
+    <br><br>
+    <div class="row text-white">
+      <div class="col-lg-6">
+        <h3>SSLC</h3>
+        <h5>Sri Krishna Matric Hr Sec School</h5>
+        <h5>Dindigul</h5>
+      </div>
+      <div class="col-lg-6 text-warning" id="year">
+        <h5>93.80 Percentage</h5>
+        <h5>May,2012</h5>
+      </div>
+    </div>
+  </div>
+ 
+
+  <!-- Social Media Section -->
+  <div class="container mt-5 , text-white">
+    <h1 class="text-warning" id="contactme">Contact me in </h1>
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+        <h5><i class="fa fa-envelope" id="contactme" aria-hidden="true"></i>&nbsp;prabhu.n30@gmail.com</h5>
+      </div><br><br>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+        <h5><i class="fa fa-mobile" aria-hidden="true"></i>&nbsp;+91-7010815349</h5>      
+      </div><br><br>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">      
+        <h5><i class="fa fa-home" aria-hidden="true"></i>&nbsp;
+          Sri Abirami Nagar, PWD Colony, Balakrishnapuram, 
+          Dindigul-624005, Tamilnadu
+        </h5>
+      </div>
+    </div>
+    <br>
+    <h1 class="text-warning" id="social-media">Getting in touch is easy</h1>
+    <div class="row">
+      <div class="icon justify-center">
+
+        <a class="btn1" href="#" onclick=LinkedIn()><i class="fab fa-linkedin-in"></i></a>
+
+        <a class="btn1" href="#" onclick=github()><i class="fab fa-github"></i></a>
+
+        <a class="btn1" href="#" onclick=instagram()><i class="fab fa-instagram"></i></a>
+
+        <a class="btn1" href="#" onclick=twitter()> <i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </div>
+  <script>
+    function LinkedIn() {
+      window.open('https://www.linkedin.com/in/durai-raj-99910b14b/', '_blank');
+    }
+    function github() {
+      window.open('https://github.com/Durairaj-tech', '_blank');
+    }
+    function instagram() {
+      window.open('https://instagram.com/durairaj_prabhu', '_blank');
+    }
+    function twitter() {
+      window.open('https://twitter.com/durairaj_prabhu', '_blank');
+    }
+  </script>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container text-muted text-center" id="last">
+      <h5>
+        Copyright &copy; 2020 |
+        <a class="text-warning " href="#about">Durairaj
+        </a>
+      </h5>
+    </div>
+  </footer>
+
+</body>
+
+</html>

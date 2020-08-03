@@ -1,0 +1,280 @@
+/* Global Properties */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background:black;
+  font-family: "Baloo Tamma 2", cursive;
+  
+}
+
+/* Main Heading Font */
+.m-heading {
+  font-family: "Roboto Slab", serif;
+}
+
+/* Navigation */
+.navigation-link {
+  border: 2px solid transparent;
+}
+
+.navigation-link:hover {
+  text-decoration: none;
+  border-bottom: 2px solid #f5ba09;
+  transition: 0.5s ease;
+}
+
+/* Changing Name Font sixe */
+.main_row h1 {
+  font-size: 5rem;
+}
+
+/* About Section */
+#about {
+  background: black;
+  margin-top: 150px;
+}
+
+#Education{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+#time{
+  margin-left:50px;
+}
+.card {
+  margin-left: 10px;
+  border-bottom: 2px solid #f5ba09;
+}
+
+#cards{
+  padding: 10px;
+}
+
+#cardbtn{
+text-align: center;
+}
+
+.cardicons{
+  height: 50px;
+  width: 50px;
+}
+.icon{
+  padding: 0;
+  margin-top: 20px;
+}
+
+#contactme{
+  display: inline-block;
+}
+#dp{
+  height: auto;
+  width: auto;
+
+}
+
+.btn1{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-left: 40px;
+  background: #1a1a1a;
+  border-radius: 30%;
+  box-shadow: 0 5px 15px -5px #f5ba09;
+  color: #f5d881;
+  overflow: hidden;
+  position: relative;
+  text-align:center;
+}
+
+.btn1 i{
+  line-height: 40px;
+  font-size: 15px;
+  transition: 0.3s linear;
+}
+
+.btn1:hover i{
+  transform: scale(1.2);
+  color: #1a1a1a ;
+}
+
+.btn1::before{
+content: "";
+position: absolute;
+width: 120%;
+height: 120%;
+background: rgb(255, 191, 0);
+transform: rotate(45deg);
+left: -110%;
+top: 90%;
+}
+
+.btn1:hover::before{
+  animation: aaa 0.7s 1;
+  top:-10%;
+  left: -10%;
+}
+
+@keyframes aaa {
+  0%{
+    left: -110%;
+    top: 90%;
+  }
+  50%{
+    left: 10%;
+    top: -30%;
+  }
+  100%{
+    top:-10%;
+  left: -10%;
+  }
+}
+
+#last{
+  margin-top: 20px;
+}
+
+#home{
+  transform: translateY(40%);
+  text-align:center;
+}
+
+#Skills {
+  width: 75%;
+  color:white
+}
+
+#list {
+  position: relative;
+  list-style: none;
+  margin: 50px 0 0 -20px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+#list:before {
+  content: "";
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  width: 75%;
+  height: 15px;
+  background-color: rgb(255, 191, 0,0.5);
+  border-radius: 1000px;
+}
+
+#list:after {
+  content: "";
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  width: 0;
+  height: 15px;
+  background-color: rgb(255, 191, 0,8);
+  border-radius: 1000px;
+  animation-duration: .7s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+#list.html:after {
+  animation-name: html;
+}
+
+@keyframes html {
+  to {
+      width: 70%;
+  }
+}
+
+#list.css:after {
+  animation-name: css;
+}
+
+@keyframes css {
+  to {
+      width: 70%;
+  }
+}
+
+#list.js:after {
+  animation-name: js;
+}
+
+@keyframes js {
+  to {
+      width: 65%;
+  }
+}
+
+#list.ts:after {
+  animation-name: ts;
+}
+
+@keyframes ts {
+  to {
+      width: 60%;
+  }
+}
+
+#list.ng:after {
+  animation-name: ng;
+}
+
+@keyframes ng {
+  to {
+      width: 65%;
+  }
+}
+
+#list.mdb:after {
+  animation-name: mdb;
+}
+
+@keyframes mdb {
+  to {
+      width: 70%;
+  }
+}
+
+#list.ms:after {
+  animation-name: ms;
+}
+
+@keyframes ms {
+  to {
+      width: 65%;
+  }
+}
+
+#list.py:after {
+  animation-name: py;
+}
+
+@keyframes py {
+  to {
+      width: 60%;
+  }
+}
+
+#list.node:after {
+  animation-name: node;
+}
+
+@keyframes node {
+  to {
+      width: 60%;
+  }
+}
+
+#list.react:after {
+  animation-name: react;
+}
+
+@keyframes react {
+  to {
+      width: 65%;
+  }
+}
