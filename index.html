@@ -125,6 +125,29 @@
   <div id="projects" class="container pt-5">
     <h1 class="text-warning mb-3 ml-1 pb-2">My Projects</h1>
     <div class="row">
+
+      <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4" id="cards">
+        <div class="card" style="width: 18rem;">
+          <img src="./images/insta.jpg" class="card-img-top" style="height: 13rem;" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Instagram Clone</h5>
+            <p class="card-text">
+              A web application having similar Instagram features using MERN
+            </p>
+            <div>
+              <h6>Tech Stack Used :</h6>
+              <img class="cardicons" src="./images/mongodb.png" alt="..." />
+              <img class="cardicons" src="./images/express.jpg" alt="..." />
+              <img class="cardicons" src="./images/reactjs.png" alt="..." />
+              <img class="cardicons" src="./images/nodejs.jpg" alt="..." /><br><br>
+            </div>
+            <div id="cardbtn"><button onclick=instaclone1() class="btn btn-warning">View Source Code</button><br><br>
+              <button onclick=instaclone2() class="btn btn-warning">View Project</button></div>
+          </div>
+        </div>
+      </div>
+
+
       <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4" id="cards">
         <div class="card" style="width: 18rem;">
           <img src="./images/newyork-times.jpg" class="card-img-top" style="height: 13rem;" alt="..." />
@@ -134,7 +157,7 @@
               NewYork Times API Integration to show top stories
             </p>
             <div>
-              <h6>Languages Used :</h6>
+              <h6>Tech Stack Used :</h6>
               <img class="cardicons" src="./images/icon1.png" alt="..." />
               <img class="cardicons" src="./images/icon2.png" alt="..." />
               <img class="cardicons" src="./images/icon3.png" alt="..." /><br><br>
@@ -154,7 +177,7 @@
               A Classic TicTacToe game using JavaScript
             </p>
             <div>
-              <h6>Languages Used :</h6>
+              <h6>Tech Stack Used :</h6>
               <img class="cardicons" src="./images/icon1.png" alt="..." />
               <img class="cardicons" src="./images/icon2.png" alt="..." />
               <img class="cardicons" src="./images/icon3.png" alt="..." /><br><br>
@@ -176,7 +199,7 @@
               A Schedule Planner using Angular <br><br>
             </p>
             <div>
-              <h6>Languages Used :</h6>
+              <h6>Tech Stack Used :</h6>
               <img class="cardicons" src="./images/icon1.png" alt="..." />
               <img class="cardicons" src="./images/icon2.png" alt="..." />
               <img class="cardicons" src="./images/icon3.png" alt="..." />
@@ -197,7 +220,7 @@
               Validation Form using Angular
             </p>
             <div>
-              <h6>Languages Used :</h6>
+              <h6>Tech Stack Used :</h6>
               <img class="cardicons" src="./images/icon1.png" alt="..." />
               <img class="cardicons" src="./images/icon2.png" alt="..." />
               <img class="cardicons" src="./images/icon4.png" alt="..." /><br><br>
@@ -218,7 +241,7 @@
               Price Card using Bootstrap
             </p>
             <div>
-              <h6>Languages Used :</h6>
+              <h6>Tech Stack Used :</h6>
               <img class="cardicons" src="./images/icon1.png" alt="..." />
               <img class="cardicons" src="./images/icon2.png" alt="..." />
               <img class="cardicons" src="./images/icon4.png" alt="..." /><br><br>
@@ -239,7 +262,7 @@
               Digits to word Conversion using JavaScript
             </p>
             <div>
-              <h6>Languages Used :</h6>
+              <h6>Tech Stack Used :</h6>
               <img class="cardicons" src="./images/icon1.png" alt="..." />
               <img class="cardicons" src="./images/icon3.png" alt="..." /><br><br>
             </div>
@@ -251,6 +274,9 @@
         </div>
       </div>
       <script>
+        function instaclone1() {
+          window.open('https://github.com/Durairaj-tech/insta-clone', '_blank');
+        }
         function nytimes1() {
           window.open('https://github.com/Durairaj-tech/newyorktimes-topstories', '_blank');
         }
@@ -268,6 +294,10 @@
         }
         function digits1() {
           window.open('https://github.com/Durairaj-tech/day-19', '_blank');
+        }
+
+        function instaclone2() {
+          window.open('https://insta-clone-by-durai.herokuapp.com/', '_blank');
         }
         function nytimes2() {
           window.open('https://boring-brattain-2d2ac8.netlify.app', '_blank');
